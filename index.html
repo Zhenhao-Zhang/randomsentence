@@ -82,11 +82,22 @@
 
             "天下万般兵刃，唯有过往伤人最深 \n 英雄联盟 疾风剑豪·亚索台词",
 
+            "疾风，亦有归途 \n 英雄联盟 封魔剑魂·永恩台词",
+
             "我曾踏足山巅，也曾进入低谷，二者都让我受益良多 \n 英雄联盟 瓦洛兰之盾·塔里克台词",
            
-
+            "像英雄一样战斗，或者像懦夫一样死去。 \n 英雄联盟 暗裔剑魔·亚托克斯台词",
 
             "我宁愿犯错，也不愿什么都不做\n 英雄联盟 时间刺客·艾克台词",
+
+
+            "翻过一座山，你就高过一座山\n 英雄联盟 不屈之枪·潘森台词",
+            
+            "我回来，是为了那些回不来的人\n 英雄联盟 虚空之女·卡莎台词",
+
+            "我是天选，也是唯一\n 英雄联盟 影流之镰·凯隐台词",
+
+            "一点寒芒先到，随后枪出如龙\n 英雄联盟 德邦总管·赵信台词",
             
         ];
         // LOL
@@ -96,8 +107,11 @@
         ];
         //Black Myth:Wukong
 
-        
-        const ary_end = ary.concat(ary1).concat(ary2);
+        var ary3 = [
+            "一片赤胆平乱世，手中长枪定江山\n 三国演义"
+        ];
+        //三国
+        const ary_end = ary.concat(ary1).concat(ary2).concat(ary3);
         var len = ary_end.length;
         var sentence = ary_end[Math.floor(Math.random() * len)];
         document.getElementById('sentence').innerText = sentence;
