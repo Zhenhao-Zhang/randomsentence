@@ -68,7 +68,8 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var ary = [
+        var ary=[];
+        var ary1 = [
             "Test 1",
             "喝点鸡汤，加点砒霜"
         ];
@@ -77,11 +78,10 @@
         var ary2 = [
             "Test2"
         ];
-        ary2=ary2.concat(ary1);
-        //
+        //Black Myth:Wukong
 
         
-        ary_end=ary2
+        const ary_end = ary.concat(ary1).concat(ary2);
         var len = ary_end.length;
         var sentence = ary_end[Math.floor(Math.random() * len)];
         document.getElementById('sentence').innerText = sentence;
